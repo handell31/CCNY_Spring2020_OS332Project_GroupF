@@ -53,7 +53,7 @@ int main (int argc, char *argv[])
      	
 	 close (fd1);
 	 close (fd2);
-     close (fd3);
+         close (fd3);
    
     int r = system("cd Dir0");
 
