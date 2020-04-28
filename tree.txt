@@ -1,0 +1,6 @@
+Starting ls -l
+total 20
+-rw-rw-r-- 1 arik_idrisy arik_idrisy 1227 Apr 11 17:14 list.c
+-rwxrwxr-x 1 arik_idrisy arik_idrisy 8784 Apr 11 17:15 run
+-rw-rw-r-- 1 arik_idrisy arik_idrisy   15 Apr 11 17:15 t1.txt
+Starting Rename
