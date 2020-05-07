@@ -8,6 +8,7 @@
 #include <errno.h>
 
 int main() {
+    chdir("Dir0");
     char cwd[PATH_MAX] = {"\0"};
     getcwd(cwd, sizeof(cwd));
     printf("%s\n", cwd);

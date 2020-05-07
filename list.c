@@ -6,11 +6,14 @@ GROUP B
 
 #include<stdio.h>
 #include<unistd.h>
+#include<stdlib.h>
 #include<sys/types.h>
 #include<sys/wait.h>
 #include<fcntl.h>
 int main(int argc, char * argv[])
 {
+    chdir("Dir0");
+    system("clear");
     //File Management
     int fd = open("t1.txt", O_RDWR);
     dup2(fd,1); //Make stdout go to t1.txt
