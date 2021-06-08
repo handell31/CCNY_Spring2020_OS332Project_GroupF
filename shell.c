@@ -21,12 +21,12 @@ int main ()
 	char file[]="./";
 	for(;;)
 	{
-		printf("\n>>>");
+		printf(">>>");
 		fgets(command,sizeof(command),stdin);
 		strtok(command,"\n");
 		while (!input_check(command))
 		{
-			printf("\n>>>");
+			printf(">>>");
 			fgets(command,sizeof(command),stdin);
 			strtok(command,"\n");
 		}
@@ -81,8 +81,8 @@ void add_to_history(char history[MAX_HISTORY][10], char *command, int *count)
 	else
 	{
 		for(int i=0;i<MAX_HISTORY-1;i++)
-			strcat(history[*count],history[*count+1]);
-		strcat(history[MAX_HISTORY-1],command);
+			strcpy(history[*count],history[*count+1]);
+		strcpy(history[MAX_HISTORY-1],command);
 	}
 }
 
